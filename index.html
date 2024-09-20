@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 20px;
+        }
+        .item {
+            background-color: #2a2a2a;
+            border-radius: 15px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .intro { grid-column: span 2; }
+        .about { grid-column: span 2; }
+        .profile-pic { grid-row: span 2; }
+        .subscribe { grid-column: span 2; }
+        .resources { grid-column: span 2; }
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            grid-column: span 2;
+        }
+        .social-icons a {
+            background-color: #3a3a3a;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+        input[type="email"] {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #3a3a3a;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4a4a4a;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item intro">
+            <h2>Hi, I'm Tamer—</h2>
+            <p>Lead product designer currently working at mano based in Cairo</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/400/300?random=2" alt="Project 2">
+        </div>
+        <div class="item profile-pic">
+            <img src="https://picsum.photos/400/600?random=3" alt="Tamer's profile picture">
+        </div>
+        <div class="item about">
+            <h3>ABOUT</h3>
+            <p>Passionate about design and enjoy solving problems.</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/400/300?random=4" alt="Project 3">
+        </div>
+        <div class="item subscribe">
+            <h3>Get design tips & guides straight to your inbox for free!</h3>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+        <div class="item">
+            <h3>Stack I use</h3>
+            <!-- Add icons for the stack here -->
+        </div>
+        <div class="item">
+            <!-- Dark mode toggle -->
+        </div>
+        <div class="item">
+            <h3>Have a project in mind?</h3>
+            <button>Copy email</button>
+        </div>
+        <div class="item resources">
+            <h3>RESOURCES</h3>
+            <p>Resources to speed your workflow</p>
+        </div>
+        <div class="item social-icons">
+            <a href="#" title="Twitter">T</a>
+            <a href="#" title="Dribbble">D</a>
+            <a href="#" title="Instagram">I</a>
+            <a href="#" title="LinkedIn">L</a>
+            <a href="#" title="Behance">B</a>
+            <a href="#" title="Email">E</a>
+        </div>
+    </div>
+</body>
+</html>
